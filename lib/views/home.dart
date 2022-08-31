@@ -11,6 +11,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   TextEditingController textEditingController = TextEditingController();
+  TextEditingController imageUrlController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -75,11 +76,22 @@ class _HomeState extends State<Home> {
             textEditingController.text = val;
           },
         ),
-        TextField(),
+        TextField(
+          controller: imageUrlController,
+          decoration: InputDecoration(
+            hintText: 'Enter an image url',
+            suffixIcon: IconButton(
+              onPressed: textEditingController.clear,
+              icon: Icon(Icons.clear),
+            ),
+          ),
+        ),
         GestureDetector(
           onTap: () async {
-            await DatabaseServices().updateInfo(textEditingController.text,
-                'https://firebasestorage.googleapis.com/v0/b/murpanara-ecom.appspot.com/o/collection1%2Fnightlovefront.png?alt=media&token=12e48285-a279-4f0e-b942-fbb539f3919d');
+            //imageUrl
+            // 'https://firebasestorage.googleapis.com/v0/b/murpanara-ecom.appspot.com/o/collection1%2Fnightlovefront.png?alt=media&token=12e48285-a279-4f0e-b942-fbb539f3919d'
+            await DatabaseServices().updateInfo(
+                textEditingController.text, imageUrlController.text);
           },
           child: Container(
             padding: EdgeInsets.all(20),
