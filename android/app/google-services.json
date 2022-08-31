@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "317392990292",
+    "project_id": "fir-task-8a337",
+    "storage_bucket": "fir-task-8a337.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317392990292:android:9121a6ea173bca9674bdc1",
+        "android_client_info": {
+          "package_name": "firebasetask.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317392990292-8tam4u9238s263fgo7hkk2gs5f5p4h2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXr8_3NbE1aiaJCi0kCx_mU8RQ97SCop0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317392990292-8tam4u9238s263fgo7hkk2gs5f5p4h2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
